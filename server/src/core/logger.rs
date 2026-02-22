@@ -3,7 +3,7 @@ use tracing_subscriber::{fmt, layer::SubscriberExt, util::SubscriberInitExt};
 
 pub fn init(level: &LevelFilter) {
     tracing_subscriber::registry()
-        .with(fmt::layer().pretty())
+        .with(fmt::layer().compact())
         .with(level.clone())
         .init();
 }
