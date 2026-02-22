@@ -20,6 +20,7 @@ tracing-subscriber = { version = "0.3.22", features = ["env-filter", "fmt", "jso
 uuid = { version = "1.21.0", features = ["v4", "serde"] }
 anyhow = "1.0"
 rust-faces = { version = "1.0.0", features = ["viz"] }
+tokio = { version = "1", features = ["full"] }
 
 [dev-dependencies]
 tempfile = "3.25.0"
