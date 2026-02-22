@@ -6,9 +6,23 @@ edition = "2024"
 [dependencies]
 dotenvy = "0.15.7"
 envy = "0.4.2"
+image = "0.24"
 log = { version = "0.4.29", features = ["serde"] }
+ndarray = "0.15"
+ort = "1.16.3"
+redb = "3.1.0"
 serde = { version = "1.0.228", features = ["derive"] }
+serde_json = "1.0"
 tracing = "0.1.44"
 tracing-appender = "0.2.4"
 tracing-error = "0.2.1"
 tracing-subscriber = { version = "0.3.22", features = ["env-filter", "fmt", "json"] }
+uuid = { version = "1.21.0", features = ["v4", "serde"] }
+anyhow = "1.0"
+rust-faces = { version = "1.0.0", features = ["viz"] }
+
+[dev-dependencies]
+tempfile = "3.25.0"
+
+[patch.crates-io]
+ort = { git = "https://github.com/pykeio/ort", tag = "v1.16.3" }

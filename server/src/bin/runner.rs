@@ -1,4 +1,4 @@
-use zupeload::{config::Config, logger};
+use zupeload::{Config, logger};
 
 fn main() -> Result<(), String> {
     let config = Config::init()?;
